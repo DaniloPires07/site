@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Locadora BTD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            background-color: rgb(0, 0, 0);
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF5722; /* Cor vibrante para chamar a atenção */
+        }
+
+        .nav-link {
+            color: #FF5722;
+            margin: 0 15px;
+        }
+
+        .nav-link:hover {
+            color: #FF7043;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+        }
+
+        .about {
+            position: relative;
+            z-index: 1;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-right: 20px;
+        }
+
+        .about video {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .footer {
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html">Locadora BTD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carros.html">CARROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="serviços.html">SERVIÇOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <video class="video-background" autoplay loop muted>
+        <source src="videos/13024265_1920_1080_24fps.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <div class="content">
+        <img src="img/san-antonio-spurs-logo-sticker-removebg-preview.png" alt="Logo" class="logo-img">
+        <h1>Bem-vindo à Locadora BTD</h1>
+        <p>Alugue o carro dos seus sonhos e viva a experiência dos esportivos de luxo</p>
+    </div>
+
+    <!-- Seção de Informações -->
+    <section class="about">
+        <div>
+            <h2>Sobre a Locadora BTD</h2>
+            <p>
+                Na Locadora BTD, oferecemos a você a experiência única de dirigir carros esportivos de luxo. Nossa frota inclui os modelos mais desejados e potentes, para que você possa viver momentos inesquecíveis.
+            </p>
+            <p>
+                Contamos com um atendimento personalizado e serviços exclusivos para garantir que sua experiência seja totalmente satisfatória. Seja para um evento especial ou um passeio de fim de semana, temos o carro perfeito para você.
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Contato: contato@locadorabtd.com | Telefone: (00) 0000-0000</p>
+        <p>©️ 2024 Locadora BTD. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
